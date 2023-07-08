@@ -9,13 +9,6 @@
         <title>Note Taker: Home Page</title>
         <%@include file="all_js_css.jsp"%>
 
-
-
-
-
-
-
-
     </head>
     <body>
 

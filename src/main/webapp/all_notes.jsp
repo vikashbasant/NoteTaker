@@ -35,7 +35,7 @@
                     <div class="card-body text-white bg-dark">
                         <p class="card-text mt-3"><%= note.getContent() %></p>
                         <div class="container text-center">
-                            <a href="#" class="btn btn-danger">Delete</a>
+                            <a href="DeleteServlet?note_id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
                             <a href="#" class="btn btn-primary">Update</a>
                         </div>
                     </div>

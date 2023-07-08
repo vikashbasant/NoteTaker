@@ -1,3 +1,4 @@
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="com.entities.Note"%>
 <%@page import="java.util.List"%>
 <%@page import="org.hibernate.Query"%>
@@ -34,6 +35,12 @@
                     </div>
                     <div class="card-body text-white bg-dark">
                         <p class="card-text mt-3"><%= note.getContent() %></p>
+                        <%
+							SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+							String formattedDate = dateFormat.format(note.getAddedDate());
+						%>
+                        
+                        <p class="card-text mt-3 text-right added-date" style="color: #FF4500;">Added Date:&nbsp; <b class="text-primary"><%= formattedDate %></b></p>
                         <div class="container text-center">
                             <a href="DeleteServlet?note_id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
                             <a href="#" class="btn btn-primary">Update</a>

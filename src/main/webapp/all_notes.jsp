@@ -43,7 +43,7 @@
                         <p class="card-text mt-3 text-right added-date" style="color: #FF4500;">Added Date:&nbsp; <b class="text-primary"><%= formattedDate %></b></p>
                         <div class="container text-center">
                             <a href="DeleteServlet?note_id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
-                            <a href="#" class="btn btn-primary">Update</a>
+                            <a href="edit.jsp?note_id=<%= note.getId() %>" class="btn btn-primary">Update</a>
                         </div>
                     </div>
                 </div>
